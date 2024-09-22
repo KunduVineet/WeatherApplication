@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Weather App</h1>
+
+    <div class="tab-container">
+      <p class="tab" data-userWeather>Your Weather</p>
+      <p class="tab" data-searchWeather>Search Weather</p>
+    </div>
+
+    <div class="weather-container">
+      <!--Grant Location Container-->
+      <div class="grant-location-container">
+        <img src="Location.svg" alt="Location image" width="80" height="80" loading="lazy" />
+        <p>Grant Location Access</p>
+        <p>Allow Access to get weather Information</p>
+        <button class="btn" data-grantAcess>Grant Access</button>
+      </div>
+
+      <!--Search Form-->
+      <form class="form-container" data-SearchForm>
+        <input placeholder="Search for City...." data-searchInput />
+        <button class="btn">
+          <img src="Search.svg" alt="Search" width="20" height="20" loading="lazy" />
+        </button>
+      </form>
+
+      <!--Loading Screen Container-->
+      <div class="loading-container">
+        <img src="Loading.svg" alt="" width="50" height="50" loading="lazy" />
+      </div>
+
+      <!--Show Weather Info-->
+      <div class="user-info-container">
+
+        <!--city name and flag-->
+        <div class="name">
+          <p data-cityName></p>
+          <img data-country-Icon>
+        </div>
+
+        <!--Weather Description-->
+        <p data-weatherDesc></p>
+
+        <!--Weather Icon-->
+        <img data-weatherIcon>
+
+        <!--Temperature-->
+        <p data-temp></p>
+
+        <div class="parameter-container">
+
+          <div class="parameter1">
+            <img src="Wind.svg" alt="Wind" width="50" height="50" loading="lazy">
+            <p>Wind Speed</p>
+            <p data-windSpeed></p>
+          </div>
+
+          <div class="parameter2"></div>
+            <img src="Humidity.svg" alt="Wind" width="50" height="50" loading="lazy">
+            <p>Humidity</p>
+            <p data-humidity></p>
+          </div>
+
+          <div class="parameter3"></div>
+            <img src="Clouds.svg" alt="Wind" width="50" height="50" loading="lazy">
+            <p>Clouds</p>
+            <p data-cloudness></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
